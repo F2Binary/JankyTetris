@@ -45,12 +45,9 @@ public class Controller {
     public static  Form makeRect(){
         int block = (int)(Math.random() * 100);
         //How to debug :3
-        System.out.println(block);
         String name;
-        Rectangle a = new Rectangle(SIZE-1,SIZE - 1),
-                b = new Rectangle(SIZE-1,SIZE - 1),
-                c = new Rectangle(SIZE-1,SIZE - 1),
-                d = new Rectangle(SIZE-1,SIZE - 1);
+        Rectangle a = new Rectangle(SIZE-1, SIZE-1), b = new Rectangle(SIZE-1, SIZE-1), c = new Rectangle(SIZE-1, SIZE-1),
+                d = new Rectangle(SIZE-1, SIZE-1);
         if (block < 15) {
             a.setX(XMAX / 2 - SIZE);
             b.setX(XMAX / 2 - SIZE);
@@ -86,11 +83,12 @@ public class Controller {
             d.setY(SIZE);
             name = "s";
         } else if (block < 75) {
+            System.out.println("T BLOCK");
             a.setX(XMAX / 2 - SIZE);
-            b.setX(XMAX / 2);
-            c.setX(XMAX / 2);
+            b.setX(XMAX/2);
+            c.setX(XMAX/2);
             c.setY(SIZE);
-            d.setX(XMAX / 2 + SIZE);
+            d.setX(XMAX/2 + SIZE);
             name = "t";
         } else if (block < 90) {
             a.setX(XMAX / 2 + SIZE);

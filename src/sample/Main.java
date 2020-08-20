@@ -26,10 +26,10 @@ public class Main extends Application {
     public static final int blockSize = 25;
     public static final int xMax = blockSize * 12;
     public static int yMax = blockSize * 24;
-    public static int [][] tetrisBoard = new int [12][24];
-    private static Pane groupe = new Pane();
+    public static int [][] tetrisBoard = new int [xMax/blockSize][yMax/blockSize];
+    private static Pane group = new Pane();
     private static Form object;
-    private static Scene scene = new Scene(groupe,xMax+150,yMax);
+    private static Scene scene = new Scene(group,xMax+150,yMax);
     public int score = 0;
     private static int LineNumber = 0;
     private static boolean game = true;
@@ -58,10 +58,10 @@ public class Main extends Application {
         level.setY(100);
         level.setX(xMax + 5);
         level.setFill((Color.PINK));
-        groupe.getChildren().addAll(scoretext,line,level);
+        group.getChildren().addAll(scoretext,line,level);
 
         Form a = nextObj;
-        groupe.getChildren().addAll(a.a,a.b,a.c,a.d);
+        group.getChildren().addAll(a.a,a.b,a.c,a.d);
         //moveOnKeyPress(a);
 
         object = a;

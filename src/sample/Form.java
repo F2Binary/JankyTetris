@@ -33,16 +33,16 @@ public class Form {
                 color = Color.BLUE;
                 break;
             case "i":
-                color = Color.LIGHTBLUE;
+                color = Color.PALEGREEN;
                 break;
             case "l":
                 color = Color.ORANGE;
                 break;
-            case "T":
-                color = Color.PURPLE;
+            case "t":
+                color = Color.PINK;
                 break;
             case "o":
-                color = Color.CYAN;
+                color = Color.YELLOW;
                 break;
             case "z":
                 color = Color.RED;
