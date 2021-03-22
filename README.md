@@ -1,2 +1,2 @@
 # JankyTetris
-A Tetris clone written in JavaFx 
+An incomplete Tetris clone written in JavaFx 
